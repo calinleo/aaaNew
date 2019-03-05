@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace aaaNew.Controllers
 {
+    //GET http://localhost:5000/api/values
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
