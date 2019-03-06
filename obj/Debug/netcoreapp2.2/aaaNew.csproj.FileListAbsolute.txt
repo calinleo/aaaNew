@@ -1,0 +1,14 @@
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\bin\Debug\netcoreapp2.2\aaaNew.deps.json
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\bin\Debug\netcoreapp2.2\aaaNew.runtimeconfig.json
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\bin\Debug\netcoreapp2.2\aaaNew.runtimeconfig.dev.json
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\bin\Debug\netcoreapp2.2\aaaNew.dll
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\bin\Debug\netcoreapp2.2\aaaNew.pdb
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.csprojAssemblyReference.cache
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.csproj.CoreCompileInputs.cache
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.RazorAssemblyInfo.cache
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.RazorAssemblyInfo.cs
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.AssemblyInfoInputs.cache
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.AssemblyInfo.cs
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.RazorTargetAssemblyInfo.cache
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.dll
+C:\Users\cleordean\Desktop\projects worked on\AspNetCore\aaaNew\obj\Debug\netcoreapp2.2\aaaNew.pdb
