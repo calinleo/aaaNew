@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 namespace aaaNew.Controllers
 {
     //GET http://localhost:5000/api/values
-    [Authorize]
+    
     [Route("api/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -22,6 +22,7 @@ namespace aaaNew.Controllers
 
         }
         // GET api/values
+        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
