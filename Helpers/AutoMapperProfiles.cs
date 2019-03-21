@@ -26,6 +26,8 @@ namespace aaaNew.Helpers
             });
             
             CreateMap<Photo, PhotosForDetailedDto>();
+            // new mapping from UserForUpdateDto into User object 
+            CreateMap<UserForUpdateDto, User>();
         }
     }
 }
