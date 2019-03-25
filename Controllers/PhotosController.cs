@@ -52,7 +52,8 @@ namespace aaaNew.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> AddPhotoForUser(int userId, PhotoForCreationDto photoForCreationDto) 
+        public async Task<IActionResult> AddPhotoForUser(int userId, 
+        [FromForm]PhotoForCreationDto photoForCreationDto) 
         {
 /* we check if userid from token matches userId from route parameter {userid} and if they don't match we return an unauthorized request */
             if(userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
@@ -97,6 +98,32 @@ namespace aaaNew.Controllers
             }
 
             return BadRequest("Could not add the photo");
+        }
+
+        [HttpPost("{id}/setMasin")]
+        public async Task<IActionResult> SetMainPhoto(int userId, int id)
+        {
+            if (userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
+                return Unauthorized();
+            // get user from repo
+            var user = await _repo.GetUser(userId);
+            // check if photo exist in photo user collection
+            if (!user.Photos.Any(p => p.Id == id))
+                return Unauthorized();
+            // get the photo from repo
+            var photoFromRepo = await _repo.GetPhoto(id);
+            // check if is the main photo
+            if (photoFromRepo.IsMain)
+                return BadRequest("This is already the main photo");
+            var currentMainPhoto = await _repo.GetMainPhotoForUser(userId);
+            currentMainPhoto.IsMain = false;
+
+            photoFromRepo.IsMain = true;
+
+            if(await _repo.SaveAll())
+                return NoContent();
+
+            return BadRequest("Could not set photo to be main photo");
         }
     }
 }
